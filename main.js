@@ -53,7 +53,7 @@ getUserInfo()
 
 
 
-    
+
 new Promise(function (resolve, reject) {
         setTimeout(() => resolve({
             name: 'Vic',
@@ -65,4 +65,4 @@ new Promise(function (resolve, reject) {
         return new Promise(function (resolve, reject) {
             setTimeout(() => reject(new Error('wrong data')), 1000);
         });
-    }).catch((error) => console.error(('wrong data')))
+    }).catch((error) => console.error((error, 'wrong data')))
