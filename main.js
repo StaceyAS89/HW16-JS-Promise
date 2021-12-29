@@ -52,6 +52,8 @@ getUserInfo()
     .catch((data) => console.error(data))
 
 
+
+    
 new Promise(function (resolve, reject) {
         setTimeout(() => resolve({
             name: 'Vic',
